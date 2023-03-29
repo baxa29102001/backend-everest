@@ -1,0 +1,16 @@
+{
+  "name": "backend-everest",
+  "version": "1.0.0",
+  "description": "Yusupaliyev ulugbek uchun yasalagan crm-dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "Bohodir Rahmonov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
