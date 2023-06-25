@@ -1,0 +1,44 @@
+/**
+ * @swagger
+ * /api/{groupId}/students:
+ *   get:
+ *     summary: Get a list of students based on groupId
+ *     description: Returns a list of students
+ *     paramters:
+ *     responses:
+ *       200:
+ *         description: A list of students
+ */
+
+/**
+ * @swagger
+ * /api/groups:
+ *   get:
+ *     summary: Get a list of groups
+ *     description: Returns a list of groups
+ *     parameters:
+ *     responses:
+ *       "200":
+ *         description: A list of groups
+ *            content:
+ *              application/json:
+ *                  schema:   
+		 properties:
+                  id:
+                    type: integer
+                    description: The ID of the example object
+                  name:
+                    type: string
+                    description: The name of the example object
+
+
+
+ *                       
+ * 
+ * 
+ * 
+ * 
+          
+ *          
+ */
+
