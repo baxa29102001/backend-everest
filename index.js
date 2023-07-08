@@ -3,6 +3,9 @@ const app = express();
 const port = 3000;
 const connectDB = require("./database/db");
 const router = require("./src/routes/main");
+const cors = require("cors");
+
+
 
 // const bodyParser = require("body-parser");
 
@@ -10,6 +13,8 @@ const router = require("./src/routes/main");
 connectDB();
 
 app.use(express.json());
+
+app.use(cors());
 // app.use(authMiddleWare);
 
 app.use("/api", router);
