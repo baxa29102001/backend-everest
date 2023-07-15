@@ -2,10 +2,10 @@ const jwt = require("jsonwebtoken");
 const config = require("../config/secrets");
 
 const generateTokens = (user) => {
-  const refreshToken = jwt.sign({ id: user._id }, config.JWT_REFRESH_SECRET, {
+  const refreshToken = jwt.sign({ id: user._id }, "bohodir", {
     expiresIn: "7d",
   });
-  const accessToken = jwt.sign({ id: user._id }, config.JWT_SECRET, {
+  const accessToken = jwt.sign({ id: user._id }, "bohodir29102001<>", {
     expiresIn: "1h",
   });
   return { refreshToken, accessToken };
