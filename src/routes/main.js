@@ -57,12 +57,14 @@ router.post("/signup", async (req, res) => {
 router.post("/login", async (req, res) => {
   try {
     const user = await Users.findOne({ fullName: req.body.fullName });
+    console.log(user);
     if (!user) {
       return res.status(400).send({ message: "Invalid email or password" });
     }
 
     res.send({ user, tokens: generateTokens(user) });
   } catch (error) {
+    console.log(error);
     res.status(500).send({ message: error });
   }
 });
