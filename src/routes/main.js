@@ -63,7 +63,7 @@ router.post("/login", async (req, res) => {
 
     res.send({ user, tokens: generateTokens(user) });
   } catch (error) {
-    res.status(500).send({ message: "Server error" });
+    res.status(500).send({ message: error });
   }
 });
 
